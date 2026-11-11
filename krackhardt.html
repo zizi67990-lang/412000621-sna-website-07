@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Krackhardt Managers｜Social Network Analysis Lab</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Social Network Analysis Lab</h1>
+  <p class="author">李發（A1200548213）</p>
+  <nav><a href="index.html" class="">Florentine Families</a><a href="krackhardt.html" class="active">Krackhardt Managers</a></nav>
+</div></header>
+<main><div class="wrap">
+
+<h2>Krackhardt High-Tech Managers</h2>
+<p class="subtitle">有向網絡 · 21 位經理 · 190 條請教關係（A → B：A 向 B 請教）</p>
+<div class="card">
+  <div class="figures">
+    <figure><a href="assets/krackhardt_pagerank.png" target="_blank"><img src="assets/krackhardt_pagerank.png" alt="PageRank 網絡圖"></a><figcaption><b>PageRank</b>：誰被重要的人請教</figcaption></figure>
+    <figure><a href="assets/krackhardt_hub.png" target="_blank"><img src="assets/krackhardt_hub.png" alt="Hub 網絡圖"></a><figcaption><b>HITS Hub</b>：誰很會去請教專家</figcaption></figure>
+    <figure><a href="assets/krackhardt_authority.png" target="_blank"><img src="assets/krackhardt_authority.png" alt="Authority 網絡圖"></a><figcaption><b>HITS Authority</b>：誰被很會問的人請教</figcaption></figure>
+  </div>
+  <p class="note">三張圖的節點位置和連線完全相同，只有節點大小代表的指標不同。點圖片可以看大圖。</p>
+</div>
+<div class="card">
+  <h3>Ranking</h3>
+  <div class="table-scroll"><table class="dataframe rank-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>rank</th>
+      <th>label</th>
+      <th>level_name</th>
+      <th>PageRank</th>
+      <th>Hub</th>
+      <th>Authority</th>
+      <th>In-degree</th>
+      <th>Out-degree</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>M21</td>
+      <td>Vice President</td>
+      <td>0.164</td>
+      <td>0.057</td>
+      <td>0.063</td>
+      <td>15</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>M07</td>
+      <td>CEO</td>
+      <td>0.104</td>
+      <td>0.046</td>
+      <td>0.056</td>
+      <td>13</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>M02</td>
+      <td>Vice President</td>
+      <td>0.094</td>
+      <td>0.017</td>
+      <td>0.082</td>
+      <td>18</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>M18</td>
+      <td>Vice President</td>
+      <td>0.072</td>
+      <td>0.075</td>
+      <td>0.071</td>
+      <td>15</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>M06</td>
+      <td>Manager</td>
+      <td>0.072</td>
+      <td>0.006</td>
+      <td>0.053</td>
+      <td>10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>M01</td>
+      <td>Manager</td>
+      <td>0.049</td>
+      <td>0.035</td>
+      <td>0.064</td>
+      <td>13</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>M04</td>
+      <td>Manager</td>
+      <td>0.046</td>
+      <td>0.067</td>
+      <td>0.041</td>
+      <td>8</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>M14</td>
+      <td>Vice President</td>
+      <td>0.044</td>
+      <td>0.026</td>
+      <td>0.055</td>
+      <td>10</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>M17</td>
+      <td>Manager</td>
+      <td>0.042</td>
+      <td>0.029</td>
+      <td>0.053</td>
+      <td>9</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>M08</td>
+      <td>Manager</td>
+      <td>0.042</td>
+      <td>0.046</td>
+      <td>0.058</td>
+      <td>10</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>M12</td>
+      <td>Manager</td>
+      <td>0.040</td>
+      <td>0.012</td>
+      <td>0.041</td>
+      <td>7</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>M11</td>
+      <td>Manager</td>
+      <td>0.039</td>
+      <td>0.019</td>
+      <td>0.063</td>
+      <td>11</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>M20</td>
+      <td>Manager</td>
+      <td>0.033</td>
+      <td>0.065</td>
+      <td>0.048</td>
+      <td>8</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>M10</td>
+      <td>Manager</td>
+      <td>0.030</td>
+      <td>0.063</td>
+      <td>0.050</td>
+      <td>9</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>M16</td>
+      <td>Manager</td>
+      <td>0.028</td>
+      <td>0.026</td>
+      <td>0.047</td>
+      <td>8</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>M03</td>
+      <td>Manager</td>
+      <td>0.027</td>
+      <td>0.079</td>
+      <td>0.029</td>
+      <td>5</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>M05</td>
+      <td>Manager</td>
+      <td>0.016</td>
+      <td>0.079</td>
+      <td>0.027</td>
+      <td>5</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>M15</td>
+      <td>Manager</td>
+      <td>0.016</td>
+      <td>0.094</td>
+      <td>0.022</td>
+      <td>4</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>M09</td>
+      <td>Manager</td>
+      <td>0.015</td>
+      <td>0.073</td>
+      <td>0.024</td>
+      <td>4</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>M13</td>
+      <td>Manager</td>
+      <td>0.014</td>
+      <td>0.031</td>
+      <td>0.026</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>M19</td>
+      <td>Manager</td>
+      <td>0.014</td>
+      <td>0.055</td>
+      <td>0.026</td>
+      <td>4</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table></div>
+  <a class="download" href="data/krackhardt_centrality.csv" download>下載 CSV</a>
+</div>
+</div></main>
+<footer>李發（A1200548213）｜本網站由 Google Colab 與 NetworkX 自動產生</footer>
+</body>
+</html>

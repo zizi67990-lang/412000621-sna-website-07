@@ -1,0 +1,16 @@
+﻿rank,id,label,wealth,Eigenvector,Degree,Betweenness
+1,9,Medici,103,0.4303,6,0.522
+2,14,Strozzi,146,0.356,4,0.1026
+3,12,Ridolfi,27,0.3416,3,0.1136
+4,15,Tornabuoni,48,0.3258,3,0.0916
+5,7,Guadagni,8,0.2891,4,0.2546
+6,4,Bischeri,44,0.2828,3,0.1044
+7,11,Peruzzi,49,0.2757,3,0.022
+8,5,Castellani,20,0.259,3,0.0549
+9,2,Albizzi,36,0.244,3,0.2125
+10,3,Barbadori,55,0.2117,2,0.0934
+11,13,Salviati,10,0.1459,2,0.1429
+12,1,Acciaiuoli,10,0.1322,1,0.0
+13,8,Lamberteschi,42,0.0888,1,0.0
+14,6,Ginori,32,0.0749,1,0.0
+15,10,Pazzi,48,0.0448,1,0.0

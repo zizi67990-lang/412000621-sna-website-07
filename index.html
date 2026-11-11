@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Florentine Families｜Social Network Analysis Lab</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Social Network Analysis Lab</h1>
+  <p class="author">李發（A1200548213）</p>
+  <nav><a href="index.html" class="active">Florentine Families</a><a href="krackhardt.html" class="">Krackhardt Managers</a></nav>
+</div></header>
+<main><div class="wrap">
+
+<h2>Florentine Families</h2>
+<p class="subtitle">無向網絡 · 15 個家族 · 20 條婚姻關係 · Eigenvector Centrality</p>
+<div class="card">
+  <figure><a href="assets/florentine_eigenvector.png" target="_blank"><img src="assets/florentine_eigenvector.png" alt="Florentine Families 網絡圖"></a><figcaption>節點越大、顏色越深，Eigenvector Centrality 越高：重要性來自你連到的家族有多重要，不只是連結的數量。</figcaption></figure>
+</div>
+<div class="card">
+  <h3>Ranking</h3>
+  <div class="table-scroll"><table class="dataframe rank-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>rank</th>
+      <th>label</th>
+      <th>wealth</th>
+      <th>Eigenvector</th>
+      <th>Degree</th>
+      <th>Betweenness</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Medici</td>
+      <td>103</td>
+      <td>0.430</td>
+      <td>6</td>
+      <td>0.522</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Strozzi</td>
+      <td>146</td>
+      <td>0.356</td>
+      <td>4</td>
+      <td>0.103</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Ridolfi</td>
+      <td>27</td>
+      <td>0.342</td>
+      <td>3</td>
+      <td>0.114</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Tornabuoni</td>
+      <td>48</td>
+      <td>0.326</td>
+      <td>3</td>
+      <td>0.092</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Guadagni</td>
+      <td>8</td>
+      <td>0.289</td>
+      <td>4</td>
+      <td>0.255</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Bischeri</td>
+      <td>44</td>
+      <td>0.283</td>
+      <td>3</td>
+      <td>0.104</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Peruzzi</td>
+      <td>49</td>
+      <td>0.276</td>
+      <td>3</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Castellani</td>
+      <td>20</td>
+      <td>0.259</td>
+      <td>3</td>
+      <td>0.055</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Albizzi</td>
+      <td>36</td>
+      <td>0.244</td>
+      <td>3</td>
+      <td>0.212</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Barbadori</td>
+      <td>55</td>
+      <td>0.212</td>
+      <td>2</td>
+      <td>0.093</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Salviati</td>
+      <td>10</td>
+      <td>0.146</td>
+      <td>2</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Acciaiuoli</td>
+      <td>10</td>
+      <td>0.132</td>
+      <td>1</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Lamberteschi</td>
+      <td>42</td>
+      <td>0.089</td>
+      <td>1</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Ginori</td>
+      <td>32</td>
+      <td>0.075</td>
+      <td>1</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Pazzi</td>
+      <td>48</td>
+      <td>0.045</td>
+      <td>1</td>
+      <td>0.000</td>
+    </tr>
+  </tbody>
+</table></div>
+  <a class="download" href="data/florentine_centrality.csv" download>下載 CSV</a>
+</div>
+</div></main>
+<footer>李發（A1200548213）｜本網站由 Google Colab 與 NetworkX 自動產生</footer>
+</body>
+</html>
